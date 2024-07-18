@@ -4,6 +4,13 @@ function tampilkanHasilBMI(bmi) {
   
     let kategori;
     let pesan;
+    let jenisKelamin = document.getElementById('jenis-kelamin').value;
+  
+    if (jenisKelamin === "laki-laki") {
+      jenisKelamin = "Laki-laki";
+    } else if (jenisKelamin === "perempuan") {
+      jenisKelamin = "Perempuan";
+    }
   
     if (bmi < 18.5) {
       kategori = "Kekurangan Berat Badan";
@@ -19,8 +26,10 @@ function tampilkanHasilBMI(bmi) {
       pesan = "Berat badan Anda jauh di atas batas normal.";
     }
   
-    // Tampilkan kategori dan pesan di HTML
-    hasilContainer.innerHTML += `<h2>Hasil BMI</h2>`;
+    // Tampilkan hasil BMI di elemen HTML
+    hasilContainer.innerHTML += `<h2>Hasil BMI ${jenisKelamin}</h2>`;
+    hasilContainer.innerHTML += `<p>BMI: ${bmi.toFixed(2)}</p>`;
     hasilContainer.innerHTML += `<p>Kategori: ${kategori}</p>`;
     hasilContainer.innerHTML += `<p>${pesan}</p>`;
-  }  
+  }
+  
