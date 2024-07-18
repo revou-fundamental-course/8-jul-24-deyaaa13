@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Kalkulator BMI</h1>
-  <div id="form-container">
-    <form id="bmi-form">
+  <div class="container">
+    <h1>Kalkulator BMI</h1>
+    <div id="form-container">
+      <form id="bmi-form">
         <label for="jenis-kelamin">Jenis Kelamin:</label>
-        <select id="jenis-kelamin" name="jenis-kelamin">
+        <select id="jenis-kelamin" name="jenis-kelamin" required>
           <option value="laki-laki">Laki-laki</option>
           <option value="perempuan">Perempuan</option>
         </select><br>
@@ -22,10 +23,11 @@
         <input type="number" id="berat" name="berat" required>
         <br>
         <button type="submit">Hitung BMI</button>
-      </form>      
+      </form>
     </div>
-  <div id="hasil-container">
-    </div>
+    <div id="hasil-container">
+      </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 </html>
