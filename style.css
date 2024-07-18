@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  #form-container {
+    margin: 20px auto;
+    width: 300px;
+  }
+  
+  #form-container label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #form-container input,
+  #form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #hasil-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #hasil-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #hasil-container p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
